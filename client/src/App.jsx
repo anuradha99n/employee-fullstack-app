@@ -1,7 +1,7 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AddEmployeeForm from "./AddEmployeeForm.jsx";
+import EmployeeForm from "./EmployeeForm.jsx";
 import EmployeeList from "./EmployeeList.jsx";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <div className="p-6">
         <Routes>
           <Route path="/" element={<EmployeeList />} />
-          <Route path="/add" element={<AddEmployeeForm />} />
-          <Route path="/update/:employeeID" element={<AddEmployeeForm />} />
+          <Route path="/add" element={<EmployeeForm />} />
+          <Route path="/update/:id" element={<EmployeeForm />} />
         </Routes>
       </div>
     </Router>
